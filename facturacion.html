@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación</title>
+
+    <!-- LINKS -->
+
+    <link rel="stylesheet" href="facturacion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"/>
+    
+    <!-- SCRIPTS -->
+
+    <script src="https://kit.fontawesome.com/88121c0ea5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- HEADER -->
+
+<div class="back">
+
+  <div class="header">
+
+    <div class="header-box">
+
+        <div class="dropdown">
+
+            <button class="dropbtn">
+        
+                <i class="fa-solid fa-filter"></i>
+        
+            </button>
+        
+            <div class="dropdown-content">
+        
+                <a href="#">Marketing</a>
+                <a href="#">Ventas</a>
+                <a href="#">Legal</a>
+                <a href="#">RRHH</a>
+                <a href="#">Logística</a>
+                <a href="#">Compras</a>
+        
+            </div>
+            
+        </div>
+
+        <img class="img-logo" src="assets/img/Zinand logo.png">
+
+        <div class="deparment-menu">
+
+            <div class="depto-btn">
+
+                <p>Marketing</p>
+
+            </div>
+
+            <div class="depto-btn">
+
+                <p>Ventas</p>
+
+            </div>
+
+            <div class="depto-btn">
+
+                <p>Legal</p>
+
+            </div>
+
+            <div class="depto-btn">
+
+                <p>RRHH</p>
+
+            </div>
+
+            <div class="depto-btn">
+
+                <p>Logística</p>
+
+            </div>
+
+            <div class="depto-btn">
+
+                <p>Compras</p>
+
+            </div>
+
+        </div>
+
+        <a class="profile" href="perfil.html">
+
+            <img class="img-profile" src="assets/img/Juan.png" />
+    
+            <p>Juan Castillo</p>
+
+            <i class="fa-solid fa-bell"></i>
+    
+        </a>
+
+    </div>
+
+</div>
+       
+<!-- MENU -->
+
+<nav class="floating-menu">
+
+    <div class="buttons-menu">
+
+      <a class="button" href="dashboard.html"> <i class="fa-solid fa-border-all"></i><p>General</p></a>
+
+      <a class="button" href="teams.html"> <i class="fa-solid fa-users-gear"></i><p>Equipos</p></a>
+
+      <a class="button" href="finanzas.html"> <i class="fa-solid fa-chart-pie"></i><p>Finanzas y Fiscal</p></a>
+
+      <a class="button" href="control.html"> <i class="fa-solid fa-address-card"></i><p>Control Personal</p></a>
+
+      <a class="button" href="#"> <i class="fa-solid fa-chart-simple"></i><p>Facturación</p></a>
+
+      <a class="button" href="reportes.html"> <i class="fa-solid fa-file-lines"></i><p>Reportes</p></a>
+
+    </div>
+
+</nav>
+
+</div>
+
+<!-- BOXES -->
+
+<div class="general-container">
+
+    <div class="acount">
+
+        <h1>Cuentas por Pagar / Cobrar</h1>
+
+        <div class="acount-box">
+
+            <div class="bar-chart-month">
+
+                <div class="bar-chart-container">
+        
+                  <ul class="budget">
+                    <li>100K</li>
+                    <li>75K</li>
+                    <li>50K</li>
+                    <li>25K</li>
+                    <li>0K</li>
+                  </ul>
+        
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-january"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Ene</p>
+        
+                    </div>
+        
+                  </div>
+        
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-february"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Feb</p>
+        
+                    </div>
+                    
+                  </div>
+        
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-march"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Mar</p>
+        
+                    </div>
+                    
+                  </div>
+        
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-april"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Abr</p>
+        
+                    </div>
+                    
+                  </div>
+        
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-may"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>May</p>
+        
+                    </div>
+                    
+                  </div>
+    
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-june"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Jun</p>
+        
+                    </div>
+                    
+                  </div>
+    
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-july"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Jul</p>
+        
+                    </div>
+                    
+                  </div>
+    
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-august"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Ago</p>
+        
+                    </div>
+                    
+                  </div>
+    
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-septembrer"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Sep</p>
+        
+                    </div>
+                    
+                  </div>
+    
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-october"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Oct</p>
+        
+                    </div>
+                    
+                  </div>
+    
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-november"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Nov</p>
+        
+                    </div>
+                    
+                  </div>
+    
+                  <div class="bar-month">
+        
+                    <div class="background-bar">
+        
+                      <div class="bar-december"></div>
+        
+                    </div>
+        
+                    <div class="depto">
+        
+                      <p>Dic</p>
+        
+                    </div>
+                    
+                  </div>
+        
+                </div>
+            
+            </div>
+
+            <div class="button-acount">
+
+                <div class="button-ac">
+
+                    <p>Pagar</p>
+
+                </div>
+
+                <div class="button-ac">
+
+                    <p>Cobrar</p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+    <div class="acount-alerts">
+
+        <h1>Alertas</h1>
+
+        <div class="calendar">
+
+          <input type="month" min="2022-01" value="2022-05">
+
+          <input type="month" min="2022-01" value="2022-05">
+
+        </div>
+
+        <div class="alert-box">
+
+            <div class="card-alert">
+
+                <div class="alert">
+    
+                    <h4>Vence</h4>
+    
+                    <p>Fac-097-420</p>
+    
+                    <h1>23</h1>
+    
+                    <h5>Miércoles</h5>
+    
+                    <i class="fa-solid fa-bell"></i>
+    
+                </div>
+    
+                <div class="alert">
+    
+                    <h4>Vence</h4>
+    
+                    <p>Fac-097-421</p>
+    
+                    <h1>24</h1>
+    
+                    <h5>Jueves</h5>
+    
+                    <i class="fa-solid fa-bell"></i>
+    
+                </div>
+    
+                <div class="alert">
+    
+                    <h4>Vence</h4>
+    
+                    <p>Fac-097-422</p>
+    
+                    <h1>25</h1>
+    
+                    <h5>Viernes</h5>
+    
+                    <i class="fa-solid fa-bell"></i>
+    
+                </div>
+    
+                <div class="alert">
+    
+                    <h4>Vence</h4>
+    
+                    <p>Fac-097-423</p>
+    
+                    <h1>26</h1>
+    
+                    <h5>Sábado</h5>
+    
+                    <i class="fa-solid fa-bell"></i>
+    
+                </div>
+    
+                <div class="alert">
+    
+                    <h4>Vence</h4>
+    
+                    <p>Fac-097-424</p>
+    
+                    <h1>27</h1>
+    
+                    <h5>Domingo</h5>
+    
+                    <i class="fa-solid fa-bell"></i>
+    
+                </div>
+    
+                <div class="alert">
+    
+                    <h4>Vence</h4>
+    
+                    <p>Fac-097-425</p>
+    
+                    <h1>28</h1>
+    
+                    <h5>Lunes</h5>
+    
+                    <i class="fa-solid fa-bell"></i>
+    
+                </div>
+    
+                <div class="alert">
+    
+                    <h4>Vence</h4>
+    
+                    <p>Fac-097-426</p>
+    
+                    <h1>29</h1>
+    
+                    <h5>Martes</h5>
+    
+                    <i class="fa-solid fa-bell"></i>
+    
+                </div>
+    
+                <div class="alert">
+    
+                    <h4>Vence</h4>
+    
+                    <p>Fac-097-427</p>
+    
+                    <h1>30</h1>
+    
+                    <h5>Miércoles</h5>
+    
+                    <i class="fa-solid fa-bell"></i>
+    
+                </div>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    
+</body>
+</html>

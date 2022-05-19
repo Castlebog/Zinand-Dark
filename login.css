@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+  }
+
+body {
+
+    width: 100%;
+    height: 1200px;  
+    background: linear-gradient(to bottom, #252b56, #2f3563, #393f6f, #43497d, #4d548a);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+
+.form-container {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.log-container {
+
+    width: 380px;
+    height: 500px;
+    background: #252B56;
+    box-shadow: 3.88785px 3.88785px 15.5514px rgba(26, 43, 82, 0.5), 0.971963px -4.85981px 9.71963px rgba(0, 0, 0, 0.17);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo {
+
+    width: 250px;
+}
+
+.log-container h3 {
+
+    padding: 10px;
+    margin: 60px 0 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.my-form {
+
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+
+    width: 300px;
+    height: 35px;
+    margin: 10px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #4D548A;
+    box-shadow: inset -4.2418px -4.2418px 9.54405px rgba(77, 84, 138, 0.88), inset 4.2418px 4.2418px 14.8463px #252B56;
+}
+
+
+input::placeholder {
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.my-form a {
+    font-size: 15px;
+    color: #a058ffa3;
+    margin: 5px 10px 40px;
+}
+
+.button button{
+    width: 197px;
+    height: 51px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: normal;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(180deg, rgba(41, 48, 94, 0.92) -38.64%, rgba(68, 78, 131, 0.92) 136.99%);
+    box-shadow: 3.88785px 3.88785px 15.5514px rgba(26, 43, 82, 0.5), 0.971963px -4.85981px 9.71963px rgba(0, 0, 0, 0.17);
+}
+
+.button button:hover {
+    color: #9F58FF;
+    background: #4D548A;
+    box-shadow: inset -4.40916px -4.40916px 9.9206px rgba(77, 84, 138, 0.88), inset 4.40916px 4.40916px 15.432px #252B56;
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .log-container {
+
+        width: 420px;
+        height: 540px;
+    }
+
+    .img-logo {
+
+        width: 290px;
+    }
+
+
+    .button button{
+        width: 227px;
+        height: 62px;
+    }
+
+    input {
+
+        width: 300px;
+        height: 45px;
+    }
+
+    .log-container h3 {
+
+        padding: 10px;
+        margin: 60px 0 10px;
+    }
+}

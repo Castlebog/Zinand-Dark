@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos</title>
+
+    <!-- LINKS -->
+
+    <link rel="stylesheet" href="teams.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"/>
+    
+<!-- SCRIPTS -->
+
+    <script src="https://kit.fontawesome.com/88121c0ea5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+<div class="back">
+
+    <div class="header">
+
+        <div class="header-box">
+
+            <div class="dropdown">
+
+                <button class="dropbtn">
+            
+                    <i class="fa-solid fa-filter"></i>
+            
+                </button>
+            
+                <div class="dropdown-content">
+            
+                    <a href="#">Marketing</a>
+                    <a href="#">Ventas</a>
+                    <a href="#">Legal</a>
+                    <a href="#">RRHH</a>
+                    <a href="#">Logística</a>
+                    <a href="#">Compras</a>
+            
+                </div>
+                
+            </div>
+
+            <img class="img-logo" src="assets/img/Zinand logo.png">
+
+            <div class="deparment-menu">
+
+                <div class="depto-btn">
+
+                    <p>Marketing</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Ventas</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Legal</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>RRHH</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Logística</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Compras</p>
+
+                </div>
+
+            </div>
+
+            <a class="profile" href="perfil.html">
+
+                <img class="img-profile" src="assets/img/Juan.png" />
+        
+                <p>Juan Castillo</p>
+
+                <i class="fa-solid fa-bell"></i>
+        
+            </a>
+
+        </div>
+
+    </div>
+       
+<!-- MENU -->
+
+<nav class="floating-menu">
+
+    <div class="buttons-menu">
+
+        <a class="button" href="dashboard.html"> <i class="fa-solid fa-border-all"></i><p>General</p></a>
+
+        <a class="button" href="#"> <i class="fa-solid fa-users-gear"></i><p>Equipos</p></a>
+
+        <a class="button" href="finanzas.html"> <i class="fa-solid fa-chart-pie"></i><p>Finanzas y Fiscal</p></a>
+
+        <a class="button" href="control.html"> <i class="fa-solid fa-address-card"></i><p>Control Personal</p></a>
+
+        <a class="button" href="facturacion.html"> <i class="fa-solid fa-chart-simple"></i><p>Facturación</p></a>
+
+        <a class="button" href="reportes.html"> <i class="fa-solid fa-file-lines"></i><p>Reportes</p></a>
+
+    </div>
+
+</nav>
+
+</div>
+
+<!-- BOXES -->
+    
+<div class="general-container">
+
+    <div class="first-group">
+
+        <div class="general-card">
+
+        <h1>Marketing</h1>
+
+        <div class="credit-card-box">
+
+            <div class="ccard-box">
+
+                <div class="first-card">
+
+                    <i class="fa-brands fa-cc-visa"></i>
+
+                    <p>*** *** *** 0000</p>
+
+                    <p>00/00</p>
+                    
+                </div>
+
+                <div class="second-card"></div>
+
+                <div class="third-card"></div>
+
+            </div>
+
+            <div class="user-card">
+
+                <div class="btn-user-card">
+
+                    <img class="img-uc" src="assets/img/Sofia.png"/>
+
+                    <div class="text-info">
+
+                        <h3>Sofia</h3>
+
+                        <p>Visa - 6420</p>
+
+                    </div>
+
+                </div>
+
+                <div class="btn-user-card">
+
+                    <img class="img-uc" src="assets/img/Rafael.png"/>
+
+                    <div class="text-info">
+
+                        <h3>Rafael</h3>
+
+                        <p>Visa - 7650</p>
+
+                    </div>
+
+                </div>
+
+                <div class="btn-user-card">
+
+                    <img class="img-uc" src="assets/img/Claudia.png"/>
+
+                    <div class="text-info">
+
+                        <h3>Claudia</h3>
+
+                        <p>Visa - 2570</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="alerts-card">
+
+        <h1>Alertas</h1>
+
+        <div class="date-box">
+
+            <input type="month" min="2022-01" value="2022-05">
+
+            <input type="month" min="2022-01" value="2022-05">
+
+        </div>
+
+        <div class="card-alert">
+
+            <div class="alert">
+
+                <h4>Vence</h4>
+
+                <p>Fac-097-420</p>
+
+                <h1>23</h1>
+
+                <h5>Miércoles</h5>
+
+                <i class="fa-solid fa-bell"></i>
+
+            </div>
+
+            <div class="alert">
+
+                <h4>Vence</h4>
+
+                <p>Fac-097-421</p>
+
+                <h1>24</h1>
+
+                <h5>Jueves</h5>
+
+                <i class="fa-solid fa-bell"></i>
+
+            </div>
+
+            <div class="alert">
+
+                <h4>Vence</h4>
+
+                <p>Fac-097-422</p>
+
+                <h1>25</h1>
+
+                <h5>Viernes</h5>
+
+                <i class="fa-solid fa-bell"></i>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+    <div class="second-group">
+
+        <div class="approved">
+
+            <h1>Aprobaciones</h1>
+
+            <div class="app-box">
+
+                <div class="app-list">
+
+                    <div class="detail">
+
+                        <h1>Amazon</h1>
+
+                        <p>9 Mayo</p>
+
+                        <h2>$2.376.00</h2>
+
+                        <div class="btn-app">
+
+                            <div class="btn-yes">
+
+                                <p>Sí</p>
+
+                            </div>
+
+                            <div class="btn-no">
+
+                                <p>No</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="detail">
+
+                        <h1>Uber</h1>
+
+                        <p>5 Mayo</p>
+
+                        <h2>$276.00</h2>
+
+                        <div class="btn-app">
+
+                            <div class="btn-yes">
+
+                                <p>Sí</p>
+
+                            </div>
+
+                            <div class="btn-no">
+
+                                <p>No</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="detail">
+
+                        <h1>Cena</h1>
+
+                        <p>5 Mayo</p>
+
+                        <h2>$893.00</h2>
+
+                        <div class="btn-app">
+
+                            <div class="btn-yes">
+
+                                <p>Sí</p>
+
+                            </div>
+
+                            <div class="btn-no">
+
+                                <p>No</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="detail">
+
+                        <h1>Evento</h1>
+
+                        <p>3 Mayo</p>
+
+                        <h2>$1.345.00</h2>
+
+                        <div class="btn-app">
+
+                            <div class="btn-yes">
+
+                                <p>Sí</p>
+
+                            </div>
+
+                            <div class="btn-no">
+
+                                <p>No</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="detail">
+
+                        <h1>Papelería</h1>
+
+                        <p>2 Mayo</p>
+
+                        <h2>$691.00</h2>
+
+                        <div class="btn-app">
+
+                            <div class="btn-yes">
+
+                                <p>Sí</p>
+
+                            </div>
+
+                            <div class="btn-no">
+
+                                <p>No</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="history">
+
+            <h1>Historial</h1>
+
+            <div class="history-box">
+
+                <div class="history-list">
+
+                    <div class="h-detail">
+
+                        <h1>Eventos</h1>
+
+                        <h2>$1.345.00</h2>
+
+                        <p>28 Abr 22</p>
+
+                    </div>
+
+                    <div class="h-detail">
+
+                        <h1>Transporte</h1>
+
+                        <h2>$284.00</h2>
+
+                        <p>25 Abr 22</p>
+
+                    </div>
+
+                    <div class="h-detail">
+
+                        <h1>Papelería</h1>
+
+                        <h2>$691.00</h2>
+
+                        <p>20 Abr 22</p>
+
+                    </div>
+
+                    <div class="h-detail">
+
+                        <h1>Pauta</h1>
+
+                        <h2>$2.783.00</h2>
+
+                        <p>01 Abr 22</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="budget">
+
+            <h1>Balance General</h1>
+
+        <div class="budget-box">
+
+            <div class="skill">
+
+                <div class="outer">
+        
+                  <div class="inner">
+        
+                    <div id="number"></div>
+        
+                  </div>
+        
+                </div>
+        
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="160px"
+                  height="160px"
+                >
+        
+                  <defs>
+        
+                    <linearGradient id="GradientColor">
+        
+                      <stop offset="0%" stop-color="#9F58FF" />
+        
+                      <stop offset="100%" stop-color="#5D22AD" />
+        
+                    </linearGradient>
+        
+                  </defs>
+        
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        
+                </svg>
+        
+              </div>
+        
+              <script>
+                let number = document.getElementById("number");
+                let counter = 0;
+                setInterval(() => {
+                  if (counter == 65) {
+                    clearInterval();
+                  } else {
+                    counter += 1;
+                    number.innerHTML = counter + "%";
+                  }
+                }, 30);
+              </script>
+
+            <div class="detail-content">
+
+                <h1>Presupuesto</h1>
+                <p>$83.870.00</p>
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

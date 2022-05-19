@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+
+    <!-- LINKS -->
+
+    <link rel="stylesheet" href="reportes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"/>
+    
+    <!-- SCRIPTS -->
+
+    <script src="https://kit.fontawesome.com/88121c0ea5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+<!-- HEADER -->
+
+<div class="back">
+
+    <div class="header">
+
+        <div class="header-box">
+
+            <div class="dropdown">
+
+                <button class="dropbtn">
+            
+                    <i class="fa-solid fa-filter"></i>
+            
+                </button>
+            
+                <div class="dropdown-content">
+            
+                    <a href="#">Marketing</a>
+                    <a href="#">Ventas</a>
+                    <a href="#">Legal</a>
+                    <a href="#">RRHH</a>
+                    <a href="#">Logística</a>
+                    <a href="#">Compras</a>
+            
+                </div>
+                
+            </div>
+
+            <img class="img-logo" src="assets/img/Zinand logo.png">
+
+            <div class="deparment-menu">
+
+                <div class="depto-btn">
+
+                    <p>Marketing</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Ventas</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Legal</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>RRHH</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Logística</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Compras</p>
+
+                </div>
+
+            </div>
+
+            <a class="profile" href="perfil.html">
+
+                <img class="img-profile" src="assets/img/Juan.png" />
+        
+                <p>Juan Castillo</p>
+
+                <i class="fa-solid fa-bell"></i>
+        
+            </a>
+
+        </div>
+
+    </div>
+       
+<!-- MENU -->
+
+<nav class="floating-menu">
+
+    <div class="buttons-menu">
+
+        <a class="button" href="dashboard.html"> <i class="fa-solid fa-border-all"></i><p>General</p></a>
+
+        <a class="button" href="teams.html"> <i class="fa-solid fa-users-gear"></i><p>Equipos</p></a>
+
+        <a class="button" href="finanzas.html"> <i class="fa-solid fa-chart-pie"></i><p>Finanzas y Fiscal</p></a>
+
+        <a class="button" href="control.html"> <i class="fa-solid fa-address-card"></i><p>Control Personal</p></a>
+
+        <a class="button" href="facturacion.html"> <i class="fa-solid fa-chart-simple"></i><p>Facturación</p></a>
+
+        <a class="button" href="#"> <i class="fa-solid fa-file-lines"></i><p>Reportes</p></a>
+
+    </div>
+
+</nav>
+
+</div>
+
+<!-- BOXES -->
+
+<div class="general-container">
+
+    <div class="board">
+
+        <div class="preferences">
+
+            <h1>Personaliza tu reporte</h1>
+
+            <div class="boxes-pre">
+
+                <div class="control-box">
+
+                    <div class="calendar">
+
+                        <input type="month" min="2022-01" value="2022-05">
+
+                        <input type="month" min="2022-01" value="2022-05">
+
+                    </div>
+
+                    <div class="report-type">
+
+                        <div class="report-input">
+
+                            <h3>Tipo de Reporte</h3>
+
+                            <input type="checkbox" id="billing">
+
+                                <label for="billing">Facturación</label>
+
+                            <input type="checkbox" id="control">
+
+                                <label for="control">Control Personal</label>
+
+                            <input type="checkbox" id="financial">
+
+                                <label for="financial">Financiero</label>
+                        
+                        </div>
+
+                        <div class="graph-input">
+
+                            <h3>Tipo de Gráfica</h3>
+
+                            <input type="checkbox" id="circular">
+
+                                <label for="circular">Circular</label>
+
+                            <input type="checkbox" id="bar">
+
+                                <label for="bar">Barras</label>
+
+                            <input type="checkbox" id="histogram">
+
+                                <label for="histogram">Líneas</label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="button-pref">
+
+                    <div class="button-p">
+
+                        <p>Generar Reporte</p>
+
+                    </div>
+
+                    <div class="button-p">
+
+                        <p>Descargar</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="report">
+
+            <h1>General - 28 de Abril</h1>
+
+            <div class="boxes">
+
+                <div class="chartline-box">
+
+                    <div class="chart-line">
+
+                        <table id="line-example-6" class="charts-css line multiple hide-data show-labels show-primary-axis show-data-axes">
+        
+                            <caption>Line Example #6</caption>
+        
+                            <thead>
+        
+                                <tr>
+                                    <th scope="col">Month</th>
+                                    <th scope="col">Progress 1</th>
+                                    <th scope="col">Progress 2</th>
+                                    <th scope="col">Progress 3</th>
+                                    <th scope="col">Progress 4</th>
+                                    <th scope="col">Progress 5</th>
+                                    <th scope="col">Progress 6</th>
+                                </tr>
+        
+                            </thead>
+        
+                            <tbody>
+        
+                                <tr>
+        
+                                    <th scope="row">Ene</th>
+        
+                                    <td style="--start: 0.1; --size: 0.5">
+        
+                                        <span class="data"> 50 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0; --size: 0.2">
+        
+                                        <span class="data"> 20 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.2; --size: 0.4">
+        
+                                        <span class="data"> 40 </span>
+        
+                                    </td>
+        
+                                </tr>
+        
+                                <tr>
+        
+                                    <th scope="row">Feb</th>
+        
+                                    <td style="--start: 0.5; --size: 0.8">
+        
+                                        <span class="data"> 80 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.2; --size: 0.5">
+        
+                                        <span class="data"> 50 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.4; --size: 0.1">
+        
+                                        <span class="data"> 10 </span>
+        
+                                    </td>
+        
+                                </tr>
+        
+                                <tr>
+        
+                                    <th scope="row">Mar</th>
+        
+                                    <td style="--start: 0.8; --size: 0.4">
+        
+                                        <span class="data"> 40 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.5; --size: 0.3">
+        
+                                        <span class="data"> 30 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.1; --size: 0.2">
+        
+                                        <span class="data"> 20 </span>
+        
+                                    </td>
+        
+                                </tr>
+        
+                                <tr>
+        
+                                    <th scope="row">Abr</th>
+        
+                                    <td style="--start: 0.4; --size: 0.2">
+        
+                                         <span class="data"> 40 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.3; --size: 0.1">
+        
+                                        <span class="data"> 30 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.2; --size: 0.1">
+        
+                                        <span class="data"> 20 </span>
+        
+                                    </td>
+        
+                                </tr>
+        
+                                <tr>
+        
+                                    <th scope="row">May</th>
+        
+                                    <td style="--start: 0.2; --size: 0.6">
+        
+                                        <span class="data"> 40 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.1; --size: 0.5">
+        
+                                        <span class="data"> 30 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.1; --size: 0.3">
+        
+                                        <span class="data"> 20 </span>
+        
+                                    </td>
+        
+                                </tr>
+        
+                                <tr>
+        
+                                    <th scope="row">Jun</th>
+        
+                                    <td style="--start: 0.6; --size: 0.3">
+        
+                                        <span class="data"> 40 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.5; --size: 0.2">
+        
+                                        <span class="data"> 30 </span>
+        
+                                    </td>
+        
+                                    <td style="--start: 0.3; --size: 0.5">
+        
+                                        <span class="data"> 20 </span>
+        
+                                    </td>
+        
+                                </tr>
+        
+                            </tbody>
+        
+                        </table>
+        
+                    </div>
+
+                </div>
+
+                <div class="list-box">
+
+                    <div class="depto-list">
+
+                        <div class="depto-card">
+        
+                            <h2>Marketing</h2>
+        
+                            <p>$50.000.00</p>
+        
+                            <div class="mktg-icon">
+        
+                                <i class="fa-solid fa-caret-up"></i>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="depto-card">
+        
+                            <h2>Ventas</h2>
+        
+                            <p>$50.000.00</p>
+        
+                            <div class="depto-icon">
+        
+                                <i class="fa-solid fa-caret-down"></i>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="depto-card">
+        
+                            <h2>Legal</h2>
+        
+                            <p>$50.000.00</p>
+        
+                            <div class="legal-icon">
+        
+                                <i class="fa-solid fa-minus"></i>
+        
+                            </div>
+                        
+                        </div>
+        
+                        <div class="depto-card">
+        
+                            <h2>RRHH</h2>
+        
+                            <p>$50.000.00</p>
+        
+                            <div class="rrhh-icon">
+        
+                                <i class="fa-solid fa-caret-up"></i>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="depto-card">
+        
+                            <h2>Logística</h2>
+        
+                            <p>$50.000.00</p>
+        
+                            <div class="logi-icon">
+        
+                                <i class="fa-solid fa-caret-down"></i>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="depto-card">
+        
+                            <h2>Legal</h2>
+        
+                            <p>$50.000.00</p>
+        
+                            <div class="shop-icon">
+        
+                                <i class="fa-solid fa-minus"></i>
+        
+                            </div>
+                        
+                        </div>
+        
+                        <div class="depto-card">
+        
+                            <h2>RRHH</h2>
+        
+                            <p>$50.000.00</p>
+        
+                            <div class="rrhh-icon">
+        
+                                <i class="fa-solid fa-caret-up"></i>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="depto-card">
+        
+                            <h2>Logística</h2>
+        
+                            <p>$50.000.00</p>
+        
+                            <div class="logi-icon">
+        
+                                <i class="fa-solid fa-caret-down"></i>
+        
+                            </div>
+        
+                        </div>
+        
+                        <div class="depto-card">
+        
+                            <h2>Legal</h2>
+        
+                            <p>$50.000.00</p>
+        
+                            <div class="shop-icon">
+        
+                                <i class="fa-solid fa-minus"></i>
+        
+                            </div>
+                        
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="history">
+
+        <h1>Historial</h1>
+
+        <div class="hist-box">
+
+            <div class="hist-list">
+
+                <div class="hist-card">
+
+                    <h2>General</h2>
+
+                    <p>28-Abr-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>Equipos</h2>
+
+                    <p>25-Abr-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>Finanzas</h2>
+
+                    <p>20-Abr-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>Personal</h2>
+
+                    <p>15-Abr-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>Facturación</h2>
+
+                    <p>13-Abr-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>Personalizado</h2>
+
+                    <p>10-Abr-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>General</h2>
+
+                    <p>05-Abr-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>Equipos</h2>
+
+                    <p>27-Mar-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>Finanzas</h2>
+
+                    <p>25-Mar-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>Personal</h2>
+
+                    <p>20-Mar-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>Facturación</h2>
+
+                    <p>15-Mar-22</p>
+
+                </div>
+
+                <div class="hist-card">
+
+                    <h2>Personalizado</h2>
+
+                    <p>10-Mar-22</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

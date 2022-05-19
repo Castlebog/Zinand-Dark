@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+
+    <!-- LINKS -->
+
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"/>
+    
+<!-- SCRIPTS -->
+
+    <script src="https://kit.fontawesome.com/88121c0ea5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+<!-- HEADER -->
+
+<div class="back">
+
+    <div class="header">
+
+        <div class="header-box">
+
+            <div class="dropdown">
+
+                <button class="dropbtn">
+            
+                    <i class="fa-solid fa-filter"></i>
+            
+                </button>
+            
+                <div class="dropdown-content">
+            
+                    <a href="#">Marketing</a>
+                    <a href="#">Ventas</a>
+                    <a href="#">Legal</a>
+                    <a href="#">RRHH</a>
+                    <a href="#">Logística</a>
+                    <a href="#">Compras</a>
+            
+                </div>
+                
+            </div>
+
+            <img class="img-logo" src="assets/img/Zinand logo.png">
+
+            <div class="deparment-menu">
+
+                <div class="depto-btn">
+
+                    <p>Marketing</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Ventas</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Legal</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>RRHH</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Logística</p>
+
+                </div>
+
+                <div class="depto-btn">
+
+                    <p>Compras</p>
+
+                </div>
+
+            </div>
+
+            <a class="profile" href="perfil.html">
+
+                <img class="img-profile" src="assets/img/Juan.png" />
+        
+                <p>Juan Castillo</p>
+
+                <i class="fa-solid fa-bell"></i>
+        
+            </a>
+
+        </div>
+
+    </div>
+       
+<!-- MENU -->
+
+<nav class="floating-menu">
+
+    <div class="buttons-menu">
+
+        <a class="button" href="dashboard.html"> <i class="fa-solid fa-border-all"></i><p>General</p></a>
+
+        <a class="button" href="teams.html"> <i class="fa-solid fa-users-gear"></i><p>Equipos</p></a>
+
+        <a class="button" href="finanzas.html"> <i class="fa-solid fa-chart-pie"></i><p>Finanzas y Fiscal</p></a>
+
+        <a class="button" href="control.html"> <i class="fa-solid fa-address-card"></i><p>Control Personal</p></a>
+
+        <a class="button" href="facturacion.html"> <i class="fa-solid fa-chart-simple"></i><p>Facturación</p></a>
+
+        <a class="button" href="reportes.html"> <i class="fa-solid fa-file-lines"></i><p>Reportes</p></a>
+
+    </div>
+
+</nav>
+
+</div>
+
+<!-- BOXES -->
+
+<div class="general-container">
+
+    <div class="profile-settings">
+
+        <div class="Profile-card">
+
+            <img class="img-card" src="assets/img/Juan.png"/>
+
+            <div class="data-user">
+
+                <h2>Juan Castillo</h2>
+
+                <p>CEO</p>
+
+                <p>jpcastillo@empresa.com</p>
+
+            </div>
+
+        </div>
+
+        <div class="settings">
+
+            <h1>Ajustes</h1>
+
+            <div class="settings-box">
+
+                <div class="leguage">
+
+                    <p>Idioma</p>
+
+                    <i class="fa-solid fa-angle-down"></i>
+
+                </div>
+
+                <div class="notification">
+
+                    <p>Notificaciones</p>
+
+                    <label class="switch">
+
+                        <input type="checkbox">
+
+                        <span class="slider round"></span>
+
+                    </label>
+
+                </div>
+
+                <div class="alerts">
+
+                    <p>Alertas</p>
+
+                    <label class="switch">
+
+                        <input type="checkbox">
+
+                        <span class="slider round"></span>
+                        
+                    </label>
+
+                </div>
+
+                <div class="button-logout">
+
+                    <p>Cerrar Sesión</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> 
+    
+    <div class="management-settings">
+
+        <div class="management">
+
+            <h1>Gerencia</h1>
+
+            <div class="management-box">
+
+                <div class="general-budget">
+
+                    <div class="g-bud">
+
+                        <p>Presupuesto General</p>
+
+                    </div>
+
+                    <input type="number" min="10.000.00" max="1.000.000.00">
+
+                    <!-- <input type="text" placeholder="Presupuesto"> -->
+
+                </div>
+
+                <div class="deparment-budget">
+
+                    <div class="d-bud">
+
+                        <p>Presupuesto Depto</p>
+
+                        <i class="fa-solid fa-angle-down"></i>
+
+                    </div>
+
+                    <input type="number" min="10.000.00" max="1.000.000.00">
+
+                    <!-- <input type="text" placeholder="Presupuesto"> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="income-expenses">
+
+            <h1>Ingresos / Egresos</h1>
+
+            <div class="income-box">
+
+                <div class="date">
+
+                    <h2>Fecha</h2>
+
+                    <p>01/06/22</p>
+                    
+                    <p>02/06/22</p>
+
+                    <p>03/06/22</p>
+
+                    <p>04/06/22</p>
+
+                    <p>05/06/22</p>
+
+                    <p>06/06/22</p>
+                    
+                    <p>07/06/22</p>
+
+                    <p>08/06/22</p>
+
+                    <p>09/06/22</p>
+
+                    <p>10/06/22</p>
+
+                </div>
+
+                <div class="client">
+
+                    <h2>Cliente</h2>
+
+                    <p>-</p>
+                    
+                    <p>NU Bank</p>
+
+                    <p>Rappi</p>
+
+                    <p>-</p>
+
+                    <p>Bitso</p>
+
+                    <p>-</p>
+                    
+                    <p>Vtex</p>
+
+                    <p>--</p>
+
+                    <p>Kavak</p>
+
+                    <p>Dlocal</p>
+
+                </div>
+
+                <div class="supplier">
+
+                    <h2>Proveedor</h2>
+
+                    <p>Proveedor 1</p>
+                    
+                    <p>-</p>
+
+                    <p>-</p>
+
+                    <p>Proveedor 2</p>
+
+                    <p>-</p>
+
+                    <p>Proveedor 3</p>
+                    
+                    <p>-</p>
+
+                    <p>Proveedor 4</p>
+
+                    <p>-</p>
+
+                    <p>-</p>
+
+                </div>
+
+                <div class="bill">
+
+                    <h2>No. Factura</h2>
+
+                    <p>Fac-097-420</p>
+                    
+                    <p>Fac-097-421</p>
+
+                    <p>Fac-097-422</p>
+
+                    <p>Fac-097-423</p>
+
+                    <p>Fac-097-424</p>
+
+                    <p>Fac-097-425</p>
+                    
+                    <p>Fac-097-426</p>
+
+                    <p>Fac-097-427</p>
+
+                    <p>Fac-097-428</p>
+
+                    <p>Fac-097-429</p>
+
+                </div>
+
+                <div class="income">
+
+                    <h2>Ingreso</h2>
+
+                    <p>-</p>
+                    
+                    <p>$5.873.00</p>
+
+                    <p>$6.986.00</p>
+
+                    <p>-</p>
+
+                    <p>$8.265.00</p>
+
+                    <p>-</p>
+                    
+                    <p>$3.987.00</p>
+
+                    <p>-</p>
+
+                    <p>$2.879.00</p>
+
+                    <p>$2.365.00</p>
+
+                </div>
+
+                <div class="expenses">
+
+                    <h2>Egreso</h2>
+
+                    <p>$1.576.00</p>
+                    
+                    <p>-</p>
+
+                    <p>-</p>
+
+                    <p>$3.985.00</p>
+
+                    <p>-</p>
+
+                    <p>$1.987.00</p>
+                    
+                    <p>-</p>
+
+                    <p>$5.682.00</p>
+
+                    <p>-</p>
+
+                    <p>-</p>
+
+                </div>
+
+            </div>
+
+            <div class="button-income">
+
+                <div class="btn-in">
+
+                    <p>Editar</p>
+
+                </div>
+
+                <div class="btn-in">
+
+                    <p>Actualizar</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>
